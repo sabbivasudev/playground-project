@@ -1,0 +1,34 @@
+/* BackgroundImages.css */
+
+.login-page-container {
+  background-image: url('../public/cric.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width:200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form-container {
+  background-image: url('../public/turftheme.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width:200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-team-container {
+  background-image: url('../public/Teampage.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width:200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
