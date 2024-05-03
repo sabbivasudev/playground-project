@@ -5,7 +5,7 @@ import SignupForm from './../components/SignupForm';
 import { Link } from 'react-router-dom';
 
 
-function LoginPage({ onToggleForm }) {
+function LoginPage() {
   const [showSignupForm, setShowSignupForm] = useState(false);
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -20,6 +20,7 @@ function LoginPage({ onToggleForm }) {
   return (
     
     <div className="login-page-container">
+      abccccccc
       <div className="login-page"></div>
       <h2>Login</h2>
         <form onSubmit={handleSubmit}>

@@ -1,22 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import LoginPage from './components/LoginPage';
-import SignupForm from './components/SignupForm';
-import CreateTeamPage from './components/CreateTeampage';
-import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';import { Link } from 'react-router-dom';
+import './App.css'; // Import your CSS file for styling
+import TeamIconPage from './components/TeamIcon';
+import TeamNamePage from './components/TeamName';
+import RulesPage from './components/Rules';
+import Createteam from './components/Createteam';
+import LoginPage from '../../reactproject/src/components/LoginPage';
+import InitialPage from './components/InitialPage';
 function App() {
-  const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-
   return (
     <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupForm />} />
-          <Route path="/create-team" element={loggedInUser ? <CreateTeamPage /> : <Navigate to="/login" />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<InitialPage />} />
+        <Route path="/team-name" element={<TeamNamePage />} />
+        <Route path="/team-icon" element={<TeamIconPage />} />
+        <Route path="/rules" element={<RulesPage />} />
+        <Route path="/team-creation" element={<Createteam />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
     </Router>
   );
 }
