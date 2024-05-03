@@ -1,34 +1,36 @@
-/* BackgroundImages.css */
-
-.login-page-container {
-  background-image: url('../public/cric.png');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  width:200vh;
+html, body, #root, .container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.left-side ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.signup-form-container {
-  background-image: url('../public/turftheme.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  width:200vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.left-side ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc; /* Separation line */
 }
 
-.create-team-container {
-  background-image: url('../public/Teampage.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  width:200vh;
+.left-side ul li a {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.left-side ul li a span {
+  margin-left: 10px; /* Space between icon and text */
+}
+.right-side {
+  flex-grow: 1; /* Takes up remaining space */
+  border-left: 1px solid #ccc; /* Line before 3/4th of the page */
+  padding-left: 20px; /* Margin */
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Align content horizontally to the center */
+  align-items: center; /* Align content vertically to the center */
 }
